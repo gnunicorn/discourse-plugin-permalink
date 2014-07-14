@@ -1,0 +1,4 @@
+uncategorized:
+  parmalink_redirect:
+    default: true
+    client: true
