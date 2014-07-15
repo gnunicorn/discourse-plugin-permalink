@@ -43,6 +43,8 @@ module TopicPermalinkExtender
         else
             params[:id] = field.topic_id
             show
+            store_preloaded("permalink_topic", field.topic_id.to_s)
+            render 'show'
         end
     end
 end
