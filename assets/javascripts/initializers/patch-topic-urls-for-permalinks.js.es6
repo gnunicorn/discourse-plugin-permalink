@@ -32,7 +32,6 @@ export default {
         params.slug = "/"
         params.t = "t"
         var model = this.setupParams(Discourse.Topic.create(_.omit(params, 'username_filters', 'filter')), transition.queryParams);
-        console.log(model);
         this.container.lookup('route:topic').currentModel = model;
         return model;
       },
@@ -40,7 +39,6 @@ export default {
       setupController: function(controller, model){
         this._super(controller, model);
         var params = this.container.lookup('route:topic-from-params');
-        console.log(params);
         params.setupController(controller, model);
       }
     });
