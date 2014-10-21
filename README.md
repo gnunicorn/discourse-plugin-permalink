@@ -1,5 +1,7 @@
 # Discourse Permalink Plugin
 
+**ATTENTION**: this plugin is defunc on vanilla discourse at the moment due to incompability with other plugins.
+
 This plugin allows for custom permalinks for topics.
 
 ## Details

@@ -50,7 +50,3 @@ module TopicPermalinkExtender
 end
 
 TopicsController.send(:include, TopicPermalinkExtender)
-
-Discourse::Application.routes.append do
-    get "*permalink" => "topics#permalink"
-end
